@@ -1,0 +1,292 @@
+
+section {
+    position: relative;
+}
+
+.appWrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px;
+    gap: 10px;
+    width: 100%;
+    margin: auto;
+    flex-wrap: nowrap;
+    
+    /* Hide the scrollbar */
+    -ms-overflow-style: none; /* For Internet Explorer */
+    scrollbar-width: none; /* For Firefox */
+}
+
+.appWrapper::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit browsers like Chrome and Safari */
+}
+
+.appContainer {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 675px;
+    align-items: center;
+    margin: 10px;
+    padding-bottom: 25px;
+    border-radius: 15px;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, #ececec 0%, #cce3f0 50%, #f0e2f2 100%);
+
+    border: 2px solid black;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+}
+
+.appContainer p {
+    margin: auto;
+    width: 90%;
+    font-family: 'Lora', sans-serif;
+    /* font-family: Helvetica, Arial, sans-serif; */
+    font-size: 26px;
+}
+
+.appContainer h3 {
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    /* font-style: italic;  */
+    color: #FFD700;
+    text-align: center;
+    margin: 15px 0;
+    grid-column: auto;
+    text-shadow:         
+        -1.25px -1.25px 0 black,
+        1.25px -1.25px 0 black,
+        -1.25px  1.25px 0 black,
+        1.25px  1.25px 0 black;
+}
+
+.project-tools {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.project-tools ul {
+    display: flex;
+    flex-direction:  row;
+    gap: 15px;
+    padding: 0;
+    justify-content: center;
+    list-style-position: inside;
+}
+
+.projectImages {
+    width: 95%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 1px solid black;
+    
+}
+
+.scrollButton {
+    position: absolute;
+    top: 40%;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.541);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    padding: 10px;
+    z-index: 10;
+    transition: transform 0.2s ease-in-out;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.scrollButton:hover {
+    transform: scale(1.5);
+}
+
+.scrollButton.left {
+    left: 10px;
+}
+.scrollButton.right {
+    right: 10px;
+}
+
+.projectLinks {
+    font-size: 1.75rem;
+    font-family: 'Space Mono', monospace;
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border: solid 1px black;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+.projectLinks:hover {
+    background-color: #3a3434;
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+/* ----------- Tablets (≤ 1024px) ----------- */
+@media (max-width: 1024px) {
+    .appContainer {
+        width: 500px;
+        height: auto;
+        margin: 5px; 
+        padding-bottom: 20px;
+    }
+
+    .appContainer h3 {
+        font-size: 32px;
+    }
+
+    .appContainer p {
+        font-size: 20px;
+    }
+
+    .project-tools {
+        font-size: 20px;
+    }
+
+    .project-tools ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .projectLinks {
+        font-size: 1.5rem;
+        width: 70%;
+        height: auto;
+    }
+
+    .scrollButton {
+        font-size: 1.5rem;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+        .appWrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .appContainer {
+        width: 95%;
+        height: auto;
+        padding-bottom: 20px;
+        flex-shrink: 0;
+        box-shadow: none;
+    }
+
+    .appContainer h3 {
+        font-size: 22px;
+    }
+
+    .appContainer p {
+        font-size: 16px;
+        width: 90%;
+        margin: 0 auto 15px auto;
+        text-align: left;
+    }
+
+    .projectImages {
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .project-tools {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .project-tools ul {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .projectLinks {
+        font-size: 1.25rem;
+        width: 90%;
+        height: auto;
+    }
+
+    .scrollButton {
+        display: none;
+    }
+}
+
+/* ----------- Phones (≤ 600px) ----------- */
+@media (max-width: 600px) {
+    .appWrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .appContainer {
+        width: 95%;
+        height: auto;
+        padding-bottom: 20px;
+        flex-shrink: 0;
+        box-shadow: none;
+    }
+
+    .appContainer h3 {
+        font-size: 22px;
+    }
+
+    .appContainer p {
+        font-size: 16px;
+        width: 90%;
+        margin: 0 auto 15px auto;
+        text-align: center;
+    }
+
+    .projectImages {
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .project-tools {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .project-tools ul {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .projectLinks {
+        font-size: 1.25rem;
+        width: 90%;
+        height: auto;
+    }
+
+    .scrollButton {
+        display: none;
+    }
+}
