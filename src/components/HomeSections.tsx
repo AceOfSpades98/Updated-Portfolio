@@ -1,5 +1,3 @@
-import React from "react";
-
 type Skill = { name: string; icon: string; alt?: string };
 type Props = {
   introTitle?: string;
