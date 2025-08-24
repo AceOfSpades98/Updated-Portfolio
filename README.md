@@ -1,69 +1,67 @@
-# React + TypeScript + Vite
+# 🌐 Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the updated version of my personal portfolio website, built using a full-stack approach with **React**, **CSS**, **Node.js**, and **PostgreSQL**. The site is designed to showcase my work, skills, and provide a way for visitors to connect with me.
 
-Currently, two official plugins are available:
+## ✨ Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is a modern, responsive, and performance-focused web portfolio. It emphasizes clean UI, accessibility, and maintainable code. It also includes a backend powered by Node.js and PostgreSQL for dynamic features like contact form submissions and (optionally) content management.
 
-## Expanding the ESLint configuration
+## 🛠️ Built With
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Frontend
+- **React** – component-based UI
+- **CSS** – styling and layout
+- **JavaScript (ES6+)** – scripting and interactivity
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Backend
+- **Node.js** – server-side runtime
+- **Express.js** – lightweight server framework
+- **PostgreSQL** – relational database for storing data (e.g., contact form submissions, project content)
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📁 Features
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Fully responsive and accessible layout
+- Contact form with backend integration
+- Project section powered by database
+- Clean, modern design
+- Future support for content management
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🧩 Roadmap / To-Do
+
+### 📊 Architecture
+- [ ] Create architectural diagram
+- [ ] Design Entity-Relationship Diagram (ERD)
+
+### 🛠️ Backend
+- [ ] Design database schema
+- [ ] Build API routes
+- [ ] Add middleware for:
+  - Authentication
+  - Metadata logging
+- [ ] Integrate backend to handle:
+  - Adding projects
+  - Displaying projects
+
+### 🎨 Frontend
+- [ ] Migrate HTML templates from the old site to React components
+- [ ] Migrate existing CSS styles to the new structure
+
+
+## 🚀 Development Plan
+
+```plaintext
+[Plan & Design] 
+    ↓
+[Database Schema] 
+    ↓
+[Backend & API] 
+    ↓
+[Middleware & Auth] 
+    ↓
+[Frontend & UI] 
+    ↓
+[Connect Frontend to Backend] 
+    ↓
+[Test & Deploy]
