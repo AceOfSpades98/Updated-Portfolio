@@ -1,6 +1,6 @@
 export type Skill = { name: string; icon: string; alt?: string };
 
-export const skills: Skill[] = [
+export const SKILLS: Skill[] = [
   { name: "Python", icon: "/images/Icons/python-icon.png", alt: "Python Icon" },
   { name: "HTML", icon: "/images/Icons/html-icon.png" },
   { name: "CSS", icon: "/images/Icons/css-icon.png" },
