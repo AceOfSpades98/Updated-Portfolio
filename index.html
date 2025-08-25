@@ -12,5 +12,14 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      (function() {
+        var params = new URLSearchParams(location.search);
+        var r = params.get("redirect");
+        if (r) {
+          window.history.replaceState({}, "", r);
+        }
+      })();
+    </script>
   </body>
 </html>
