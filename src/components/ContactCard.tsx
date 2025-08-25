@@ -15,7 +15,7 @@ type ContactCardProps = {
 export default function ContactCard({
   onContactClick,
   titles = ["Software Developer", "Web Developer"],
-  photoSrc = "/images/me.jpg",
+  photoSrc = "images/me.jpg",
   links = {
     linkedin: "https://www.linkedin.com/in/noah-w-307642329/",
     github: "https://github.com/NoahWhiffen?tab=repositories",
@@ -41,7 +41,7 @@ export default function ContactCard({
         {links.linkedin && (
           <a href={links.linkedin} target="_blank" rel="noreferrer">
             <img
-              src="/images/Icons/linkedin-square-icon.png"
+              src="images/Icons/linkedin-square-icon.png"
               alt="LinkedIn"
               className="socialIcons"
             />
@@ -50,7 +50,7 @@ export default function ContactCard({
         {links.github && (
           <a href={links.github} target="_blank" rel="noreferrer">
             <img
-              src="/images/Icons/github-icon.png"
+              src="images/Icons/github-icon.png"
               alt="GitHub"
               className="socialIcons"
             />
@@ -59,7 +59,7 @@ export default function ContactCard({
         {links.instagram && (
           <a href={links.instagram} target="_blank" rel="noreferrer">
             <img
-              src="/images/Icons/black-instagram-icon.png"
+              src="images/Icons/black-instagram-icon.png"
               alt="Instagram"
               className="socialIcons"
             />
