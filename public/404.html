@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script>
+      (function() {
+        var repo = "/Updated-Portfolio";
+        var redirectUrl = repo + "/index.html?redirect=" + encodeURIComponent(location.pathname.replace(repo, "") + location.search + location.hash);
+        location.replace(redirectUrl);
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>

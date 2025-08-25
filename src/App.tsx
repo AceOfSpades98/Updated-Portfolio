@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/Updated-Portfolio">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
