@@ -1,7 +1,5 @@
 import { SKILLS } from "../data/skills";
 
-type Skill = { name: string; icon: string; alt?: string };
-
 type Props = {
   introTitle?: string;
   introText?: string;
