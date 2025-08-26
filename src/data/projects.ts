@@ -18,7 +18,7 @@ export const projectSections: ProjectSection[] = [
     projects: [
       {
         title: "Password Strength Checker",
-        img: "images/Projects/PasswordChecker.png",
+        img: "/images/Projects/PasswordChecker.png",
         alt: "Password Strength Checker",
         desc:
           "A simple GUI to validate the strength of your password by checking a list of common passwords and other criteria.",
@@ -27,7 +27,7 @@ export const projectSections: ProjectSection[] = [
       },
       {
         title: "Pay Calculator",
-        img: "images/Projects/PayCalculator.png",
+        img: "/images/Projects/PayCalculator.png",
         alt: "Pay Calculator",
         desc:
           "A simple GUI to calculate a net pay rate when an employee's rate of pay and hours worked are entered. My first ever project!",
@@ -36,7 +36,7 @@ export const projectSections: ProjectSection[] = [
       },
       {
         title: "Bitcoin Price Tracker",
-        img: "images/Projects/bitcoinTracker.png",
+        img: "/images/Projects/bitcoinTracker.png",
         alt: "Bitcoin Price Tracker",
         desc:
           "A React app that pulls the current price of Bitcoin from an API and displays it in 4 separate currencies.",
@@ -45,7 +45,7 @@ export const projectSections: ProjectSection[] = [
       },
       {
         title: "CLI Menu Application",
-        img: "images/Projects/PythonMenu.png",
+        img: "/images/Projects/PythonMenu.png",
         alt: "Python Menu App",
         desc:
           "A comprehensive menu application that runs 5 different programs based on user input.",
@@ -54,7 +54,7 @@ export const projectSections: ProjectSection[] = [
       },
       {
         title: "One Stop Insurance Company",
-        img: "images/Projects/OneStopInsurance.png",
+        img: "/images/Projects/OneStopInsurance.png",
         alt: "Insurance Company App",
         desc: "An application that generates invoices for an insurance company.",
         tools: ["Python"],
@@ -62,7 +62,7 @@ export const projectSections: ProjectSection[] = [
       },
       {
         title: "Conference Manager",
-        img: "images/Projects/conferenceManager.png",
+        img: "/images/Projects/conferenceManager.png",
         alt: "Conference Management App",
         desc:
           "A CLI app to manage conference information (speakers, topics, etc.) using PostgreSQL queries.",
@@ -76,7 +76,7 @@ export const projectSections: ProjectSection[] = [
     projects: [
       {
         title: "Live WebSocket Chat",
-        img: "images/Projects/SocketChat.png",
+        img: "/images/Projects/SocketChat.png",
         alt: "Live WebSocket Chat",
         desc:
           "A live chat application with login; stores user credentials and messages in a database.",
@@ -86,7 +86,7 @@ export const projectSections: ProjectSection[] = [
       },
       {
         title: "Genealogy Website",
-        img: "images/Projects/whiffenGene.png",
+        img: "/images/Projects/whiffenGene.png",
         alt: "Genealogy Website",
         desc:
           "A simple webpage intended to be used for my genealogy research.",
@@ -95,7 +95,7 @@ export const projectSections: ProjectSection[] = [
       },
       {
         title: "Dog Image API",
-        img: "images/Projects/dogApi.png",
+        img: "/images/Projects/dogApi.png",
         alt: "Dog API App",
         desc:
           "Pulls dog images from an API based on selected breed and desired number of images.",
@@ -104,7 +104,7 @@ export const projectSections: ProjectSection[] = [
       },
       {
         title: "To‑Do List App",
-        img: "images/Projects/ToDoApp.png",
+        img: "/images/Projects/ToDoApp.png",
         alt: "To‑Do App",
         desc:
           "A to‑do list app that allows the user to keep track of tasks.",
@@ -113,7 +113,7 @@ export const projectSections: ProjectSection[] = [
       },
       {
         title: "Gym Management App",
-        img: "images/Projects/GymManagement.png",
+        img: "/images/Projects/GymManagement.png",
         alt: "Gym Management System",
         desc:
           "A CLI app to manage a gym’s customers and employees and store necessary data in a database.",
@@ -122,7 +122,7 @@ export const projectSections: ProjectSection[] = [
       },
       {
         title: "Math Competition App",
-        img: "images/Projects/mathCompetition.png",
+        img: "/images/Projects/mathCompetition.png",
         alt: "Math Competition App",
         desc:
           "An Express app that generates random math questions and tracks high scores.",

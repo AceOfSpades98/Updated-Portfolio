@@ -15,54 +15,66 @@
     width: 425px;
     height: 650px;
     position: fixed;
-    background-color: rgb(218, 218, 218);
-    border-radius: 35px;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 1.5em;
-    color: black;
     grid-column: 1;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     z-index: 1000;
+    background: var(--panel);
+    border: 2px solid var(--accent);
+    color: var(--text);
+    border-radius: 28px;
+    box-shadow: var(--shadow-1);
 }
 
 .contactCard p {
     font-size: 2.5rem;
+    color: var(--muted);
 }
 
-.myPhoto {
-    width: 80%;
-    height: 80%;
-    border-radius: 100px;
+.myPhoto {  
+    width: 180px;
+    height: 180px;
+    border-radius: 999px;
     object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 2.0);
-    margin-left: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,.35);
+    margin: auto;
+    outline: 6px solid #ffffff08;
 }
 
 .contact-button {
-    font-size: 2.25rem;
-    width: 90%;
-    height: 80px;
-    margin-left: 15px;
-    margin-top: 15px;
-    background-color: #4CAF50;
-    color: black;
-    border: solid 1px black;
-    border-radius: 25px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: .2px;
+    width: 100%;
+    height: auto;
+    padding: 12px 16px;
+    margin: 6px 0 0;
+    color: white;
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    border: none;
+    border-radius: 999px;
+    box-shadow: 0 8px 22px rgba(34,197,94,.28);
+    transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
 }
 
-.contact-button:hover {
-    background-color: #45a049;
-    cursor: pointer;
-}
+.contact-button:hover{ 
+    transform: translateY(-2px); 
+    filter: brightness(1.03); 
+    box-shadow: 0 12px 26px rgba(34,197,94,.36); 
+    cursor: pointer; }
+
+.contact-button:focus-visible{ 
+    outline: 3px solid var(--ring); 
+    outline-offset: 2px; }
 
 .socialContainer {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 15px;
+    gap: 10px;
 }
 
 .socialIcons {
@@ -163,17 +175,18 @@ form button:hover {
 }
 
 .icon-container {
-    width: 10vw;
-    padding: 15px;
-    margin: 25px;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-    position: relative;
+  margin: 25px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 16px 12px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-1);
+  display: grid; place-items: center; gap: 10px;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
 }
 
 .icon-container:nth-child(odd) {
@@ -184,15 +197,27 @@ form button:hover {
     background-color: #a09e9e;
 }
 
-.icon-images {
-    width: 80%;
-    height: auto;
-    object-fit: contain;
-    transition: transform 0.3s ease;
+.icon-container:hover{
+  transform: translateY(-3px);
+  border-color: #ffffff2b;
+  box-shadow: var(--shadow-2);
 }
 
-.icon-container:hover .icon-images {
-    transform: scale(1.15);
+.icon-images{ 
+  width: 75px; 
+  height: 75px; 
+  object-fit: contain; 
+}
+
+.tooltip-text{
+  position: static;
+  visibility: visible;
+  opacity: 0.9;
+  transform: none;
+  background: none;
+  color: var(--text);
+  font-size: .9rem;
+  font-style: normal;
 }
 
 .tooltip-text {
