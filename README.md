@@ -30,23 +30,13 @@ This project is a modern, responsive, and performance-focused web portfolio. It 
 
 ## 🧩 Roadmap / To-Do
 
-### 📊 Architecture
-- [ ] Create architectural diagram
-- [ ] Design Entity-Relationship Diagram (ERD)
-
 ### 🛠️ Backend
-- [ ] Design database schema
-- [ ] Build API routes
-- [ ] Add middleware for:
-  - Authentication
-  - Metadata logging
-- [ ] Integrate backend to handle:
-  - Adding projects
-  - Displaying projects
+- [ ] Make email contacting work
+- [ ] Possible metadata from traffic?
 
 ### 🎨 Frontend
-- [ ] Migrate HTML templates from the old site to React components
-- [ ] Migrate existing CSS styles to the new structure
+- [ ] Update styles for projects page
+- [ ] Remove some projects to reduce clutter
 
 
 ## 🚀 Development Plan
@@ -65,4 +55,3 @@ This project is a modern, responsive, and performance-focused web portfolio. It 
 [Connect Frontend to Backend] 
     ↓
 [Test & Deploy]
-
