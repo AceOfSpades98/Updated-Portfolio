@@ -30,23 +30,13 @@ This project is a modern, responsive, and performance-focused web portfolio. It 
 
 ## 🧩 Roadmap / To-Do
 
-### 📊 Architecture
-- [ ] Create architectural diagram
-- [ ] Design Entity-Relationship Diagram (ERD)
-
 ### 🛠️ Backend
-- [ ] Design database schema
-- [ ] Build API routes
-- [ ] Add middleware for:
-  - Authentication
-  - Metadata logging
-- [ ] Integrate backend to handle:
-  - Adding projects
-  - Displaying projects
+- [ ] Make email contacting work
+- [ ] Possible metadata from traffic?
 
 ### 🎨 Frontend
-- [ ] Migrate HTML templates from the old site to React components
-- [ ] Migrate existing CSS styles to the new structure
+- [ ] Update styles for projects page
+- [ ] Remove some projects to reduce clutter
 
 
 ## 🚀 Development Plan
@@ -65,63 +55,3 @@ This project is a modern, responsive, and performance-focused web portfolio. It 
 [Connect Frontend to Backend] 
     ↓
 [Test & Deploy]
-
-1. Global / Foundation
-
- Switch to a clean, modern font (e.g., Inter or Geist via Google Fonts).
-
- Update color palette (ditch harsh yellow on blue → use softer accent).
-
- Add consistent spacing (8px scale, more whitespace around sections).
-
- Consider gradient or subtle pattern for the background instead of flat blue.
-
-2. Navigation Bar
-
- Make it sticky at the top.
-
- Add backdrop blur + slight transparency.
-
- Modern hover underline animation for links.
-
-3. Hero Section
-
- Larger, bolder heading (36–48px).
-
- Subheading/body with softer gray text.
-
- Better vertical alignment (photo + intro side by side, centered).
-
-4. Contact Card
-
- Change gray background → glassmorphic or soft dark card.
-
- Add your photo in a circle at top.
-
- Modernize the button (pill shape, gradient, hover shadow).
-
- Adjust text hierarchy (name larger, roles lighter).
-
- Social icons: add subtle hover effects.
-
-5. Skills Section
-
- Replace flat gray squares with uniform modern cards (rounded corners, soft border, hover lift).
-
- Add labels under icons (smaller text).
-
- Use responsive grid with equal spacing.
-
-6. About Section
-
- Headline styling consistent with “Skills” (uppercase, muted accent color).
-
- Improve text readability (larger, softer color, more line spacing).
-
-7. Footer
-
- Center the text.
-
- Muted color instead of black.
-
- Styled links with hover underline.
