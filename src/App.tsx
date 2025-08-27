@@ -4,11 +4,9 @@ import Projects from "./components/Projects";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-const BASE = (import.meta.env.BASE_URL || "/").replace(/\/+$/, "");
-
 export default function App() {
   return (
-    <BrowserRouter basename={BASE}>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
