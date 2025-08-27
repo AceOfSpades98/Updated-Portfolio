@@ -422,6 +422,13 @@ form button:hover {
         margin-top: 20px;
     }
 
+    .contentContainer > h3 {
+        flex: 0 0 100%;
+        width: 100%;
+        order: -1;
+        margin: 0 0 8px 0;
+  }
+
     .contentContainer p {
         font-size: 1.75rem;
         width: 100%;
