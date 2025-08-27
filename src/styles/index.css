@@ -22,7 +22,7 @@
     grid-column: 1;
     z-index: 1000;
     background: rgba(255, 255, 255, 0.144);
-border: 1px solid color-mix(in oklab, var(--accent) 30%, white);    
+    border: 1px solid color-mix(in oklab, var(--accent) 30%, white);    
     backdrop-filter: blur(10px) saturate(140%);
     border-radius: 28px;
     box-shadow: var(--shadow-1);
@@ -160,12 +160,12 @@ form button:hover {
     gap: 30px;
     margin-top: 20px;
     margin-left: 20%;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     grid-column: 2;
 }
 
 .contentContainer p {
-    font-family: 'Space Mono', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 32px;
     width: 50vw;
     height: auto;
