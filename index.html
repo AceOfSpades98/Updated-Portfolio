@@ -8,20 +8,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-
-    <script>
-      (function() {
-        var l = window.location;
-        if (l.search.length > 1 && l.search[1] === '/') {
-          var decoded = l.search
-            .slice(1)
-            .split('&')
-            .map(function(s) { return s.replace(/~and~/g, '&'); })
-            .join('?');
-          window.history.replaceState(null, null, decoded + l.hash);
-        }
-      })();
-    </script>
   </head>
   <body>
     <div id="root"></div>
