@@ -296,7 +296,7 @@ form button:hover {
         margin-left: 150px;
         margin-top: 20px;
         width: 325px;
-        height: 420px;
+        height: 440px;
         top: 75px;
         font-size: 1em;
         padding: 10px;
@@ -329,9 +329,7 @@ form button:hover {
         grid-column: 2;
         gap: 20px;
         margin-top: 20px;
-        margin-left: auto;
-        margin-right: 30px;
-        justify-content: flex-end;
+        margin-left: 425px;
         margin-bottom: 30px;
         width: 50%;
     }
@@ -358,7 +356,8 @@ form button:hover {
 
     .icon-images {
         width: 80%;
-        height: auto;
+        height: 80%;
+        margin: auto;
         object-fit: contain;
         transition: transform 0.3s ease;
     }
@@ -444,7 +443,7 @@ form button:hover {
     }
 
     .icon-container {
-        width: 40%;
+        width: 100%;
         margin: 10px 0;
         text-align: center;
         display: flex;
