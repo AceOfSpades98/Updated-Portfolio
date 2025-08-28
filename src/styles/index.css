@@ -175,7 +175,6 @@ form button:hover {
 }
 
 .icon-container {
-  margin: 25px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -241,6 +240,14 @@ form button:hover {
 .icon-container:hover .tooltip-text {
     visibility: visible;
     opacity: 1;
+}
+
+.skill-group { 
+    display: contents; 
+}
+
+.skillsGrid { 
+    display: contents; 
 }
 
 /* ----------- Media Queries ----------- */

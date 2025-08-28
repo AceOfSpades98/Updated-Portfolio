@@ -55,6 +55,15 @@ export const projects: Project[] = [
     href: "https://github.com/NoahWhiffen/dog-breed-gallery",
   },
   {
+    title: "One Stop Insurance Company",
+    img: "images/Projects/OneStopInsurance.png",
+    alt: "Insurance Company App",
+    desc: "An application that generates invoices for an insurance company.",
+    tools: ["Python"],
+    href: "https://github.com/AceOfSpades98/qap4-Term1"
+  },
+
+  {
     title: "To-Do List App",
     img: "images/Projects/ToDoApp.png",
     alt: "To-Do App",
@@ -105,15 +114,6 @@ export const projects: Project[] = [
   //   tools: ["Python"],
   //   // no link provided
   // },
-  // {
-  //   title: "One Stop Insurance Company",
-  //   img: "images/Projects/OneStopInsurance.png",
-  //   alt: "Insurance Company App",
-  //   desc: "An application that generates invoices for an insurance company.",
-  //   tools: ["Python"],
-  //   // no link provided
-  // },
-  // {
   //   title: "Conference Manager",
   //   img: "images/Projects/conferenceManager.png",
   //   alt: "Conference Management App",

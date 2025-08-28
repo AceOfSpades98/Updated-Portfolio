@@ -52,6 +52,14 @@ h3 {
     font-family: 'Lora', sans-serif;
 }
 
+h4 {
+    font-size: clamp(20px, 2.2vw, 32px);
+    font-weight: 525;
+    color: var(--accent);
+    grid-column: 1 / -1;
+    font-family: 'Lora', sans-serif;
+}
+
 /* ----------- Media Queries ----------- */
 
 /* Tablets (768px and below) */
