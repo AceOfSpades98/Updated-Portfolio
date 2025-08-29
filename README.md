@@ -10,7 +10,6 @@ SOME SCREEN SIZES CURRENTLY NOT SUPPORTED INCLUDING:
 
 Will be fixing this in the future. Sorry for the inconvenience. If any other screen sizes look wonky please let me know.
 
-
 ## ✨ Overview
 
 This project is a modern, responsive, and performance-focused web portfolio. It emphasizes clean UI, accessibility, and maintainable code. It also includes a backend powered by Node.js and PostgreSQL for dynamic features like contact form submissions and (optionally) content management.
