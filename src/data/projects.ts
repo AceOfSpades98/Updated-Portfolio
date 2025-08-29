@@ -14,7 +14,7 @@ export const projects: Project[] = [
     alt: "Airport API",
     desc:
       "An API used to track flights and all relevant information. Populated with dummy data and demonstrated with Postman.",
-    tools: ["Java", "Maven", "MySQL"],
+    tools: ["Java", "Maven", "Springboot", "MySQL"],
     href:
       "https://github.com/Noah-Lambe/Sprint1_AirportAPI",
   },
@@ -29,11 +29,11 @@ export const projects: Project[] = [
       "https://github.com/Noah-Lambe/Sprint1_AirportAPI",
   },
   {
-    title: "Binary Search Tree API",
+    title: "BST API",
     img: "images/Projects/binarysearchtree.jpg",
     alt: "Binary Search Tree API",
     desc:
-      "An API which accepts user input and stores the values as JSON",
+      "An API which demonstrates binary search trees and accepts user input and stores the values as JSON",
     tools: ["Java", "Maven", "Springboot", "MySQL"],
     href: "https://github.com/AceOfSpades98/FinalSprintDSA",
   },
