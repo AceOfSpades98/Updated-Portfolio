@@ -13,7 +13,7 @@ export const projects: Project[] = [
     img: "images/Projects/airportapi.png",
     alt: "Airport API",
     desc:
-      "An API used to track flights and all relevant information. Populated with dummy data and demonstrated with Postman.",
+      "An API used to track flights and all relevant information. Automatically creates database and populates with dummy data if it doesn't exist. Image is a GET request from the database using Postman.",
     tools: ["Java", "Maven", "Springboot", "MySQL", "Docker"],
     href:
       "https://github.com/Noah-Lambe/Sprint1_AirportAPI",
@@ -33,7 +33,7 @@ export const projects: Project[] = [
     img: "images/Projects/binarysearchtree.jpg",
     alt: "Binary Search Tree API",
     desc:
-      "An API which demonstrates binary search trees and accepts user input and stores the values as JSON",
+      "An API which demonstrates binary search trees and accepts user input and stores the values as JSON. Image is a GET request from the database using Postman",
     tools: ["Java", "Maven", "Springboot", "MySQL"],
     href: "https://github.com/AceOfSpades98/FinalSprintDSA",
   },
@@ -45,6 +45,16 @@ export const projects: Project[] = [
       "A React app for the BST API that displays user input as JSON data. Also allows you to view all past trees as JSON data.",
     tools: ["Javascript", "React", "CSS"],
     href: "https://github.com/AceOfSpades98/FinalSprintDSA-FrontEnd",
+  },
+  {
+    title: "Portfolio Website",
+    img: "images/Projects/portfolio.jpg",
+    alt: "Portfolio",
+    desc:
+      "A website to showcase my projects and skills.",
+    tools: ["Typescript", "React", "CSS"],
+    href:
+      "https://github.com/Noah-Lambe/Sprint1_AirportAPI",
   },
   {
     title: "Live WebSocket Chat",
@@ -89,7 +99,7 @@ export const projects: Project[] = [
     img: "images/Projects/PasswordChecker.png",
     alt: "Password Strength Checker",
     desc:
-      "A simple GUI to validate the strength of your password by checking a list of common passwords and other criteria.",
+      "A simple GUI to validate the strength of your password by checking a list of common passwords and other criteria. One of my first ever projects.",
     tools: ["Python", "Tkinter"],
     href: "https://github.com/AceOfSpades98/passwordStrengthChecker",
   },
