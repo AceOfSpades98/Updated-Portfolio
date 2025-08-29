@@ -54,7 +54,7 @@ export const projects: Project[] = [
       "A website to showcase my projects and skills.",
     tools: ["Typescript", "React", "CSS"],
     href:
-      "https://github.com/Noah-Lambe/Sprint1_AirportAPI",
+      "https://github.com/AceOfSpades98/Updated-Portfolio",
   },
   {
     title: "Live WebSocket Chat",
