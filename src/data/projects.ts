@@ -14,7 +14,7 @@ export const projects: Project[] = [
     alt: "Airport API",
     desc:
       "An API used to track flights and all relevant information. Populated with dummy data and demonstrated with Postman.",
-    tools: ["Java", "Maven", "Springboot", "MySQL"],
+    tools: ["Java", "Maven", "Springboot", "MySQL", "Docker"],
     href:
       "https://github.com/Noah-Lambe/Sprint1_AirportAPI",
   },

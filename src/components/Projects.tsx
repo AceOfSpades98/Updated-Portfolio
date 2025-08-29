@@ -11,8 +11,8 @@ export default function Projects() {
         <div className="projects-blurb">
           <h2 className="project-header">My Projects</h2>
           <p>
-            Here are a handful of my projects, ranging from school assignments to personal projects. You'll see a combination of front-end and back-end
-            applications, some of which are paired together. 
+            Here are a handful of my projects, ranging from school assignments to personal projects. These are my favourites and
+            demonstrate both my front-end and back-end capabilities, as well as my ability to integrate both. 
           </p>
         </div>
 
