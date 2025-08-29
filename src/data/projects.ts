@@ -133,15 +133,6 @@ export const projects: Project[] = [
   //   tools: ["Python"],
   //   // no link provided
   // },
-  // {
-  //   title: "One Stop Insurance Company",
-  //   img: "images/Projects/OneStopInsurance.png",
-  //   alt: "Insurance Company App",
-  //   desc: "An application that generates invoices for an insurance company.",
-  //   tools: ["Python"],
-  //   // no link provided
-  // },
-  // {
   //   title: "Conference Manager",
   //   img: "images/Projects/conferenceManager.png",
   //   alt: "Conference Management App",
@@ -176,4 +167,12 @@ export const projects: Project[] = [
   //     "A to-do list app that allows the user to keep track of tasks.",
   //   tools: ["JavaScript", "React", "CSS"],
   //   href: "https://github.com/NoahWhiffen/to-do-app",
+  // },
+  // {
+  //   title: "One Stop Insurance Company",
+  //   img: "images/Projects/OneStopInsurance.png",
+  //   alt: "Insurance Company App",
+  //   desc: "An application that generates invoices for an insurance company.",
+  //   tools: ["Python"],
+  //   href: "https://github.com/AceOfSpades98/qap4-Term1"
   // },
