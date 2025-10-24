@@ -21,7 +21,6 @@ export default function ContactModal({ open, onClose }: ContactModalProps) {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // TODO: wire up EmailJS / backend
     onClose();
   };
 
@@ -64,3 +63,9 @@ export default function ContactModal({ open, onClose }: ContactModalProps) {
     </div>
   );
 }
+
+// TODO:
+
+// Email service
+// Validate emails to prevent spam
+// Wire backend for future proofing
