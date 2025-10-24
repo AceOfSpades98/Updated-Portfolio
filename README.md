@@ -35,30 +35,29 @@ This project is a modern, responsive, and performance-focused web portfolio. It 
 - Clean, modern design
 - Future support for content management
 
+## 🔧 Backend Email Integration To-Do
 
-## 🧩 Roadmap / To-Do
+### Goal: Secure, scalable contact form with spam protection and email delivery
 
-### 🛠️ Backend
-- [ ] Make email contacting work
-- [ ] Possible metadata from traffic?
+### ✅ 1. Set Up Backend Email Service
+- [ ] Create a backend API route (`/api/contact`) using Express.js or Vercel serverless function
+- [ ] Install and configure `nodemailer` or `@sendgrid/mail`
+- [ ] Use environment variables for email credentials (e.g., `.env` file)
 
-### 🎨 Frontend
-- [ ] Redo some media queries
+### ✅ 2. Validate & Sanitize Inputs
+- [ ] Check for required fields: name, email, message
+- [ ] Validate email format with regex or `validator.js`
+- [ ] Limit message length and strip HTML
 
+### ✅ 3. Add Spam Protection
+- [ ] Add a hidden "honeypot" input field to trap bots
+- [ ] (Optional) Add Google reCAPTCHA v3 for advanced bot detection
+- [ ] (Optional) Use `express-rate-limit` to prevent abuse
 
-## 🚀 Development Plan
+### ✅ 4. Connect Frontend to Backend
+- [ ] Replace default `handleSubmit` in React with `fetch('/api/contact', {...})`
+- [ ] Handle loading state and show success/failure messages
 
-```plaintext
-[Plan & Design] 
-    ↓
-[Database Schema] 
-    ↓
-[Backend & API] 
-    ↓
-[Middleware & Auth] 
-    ↓
-[Frontend & UI] 
-    ↓
-[Connect Frontend to Backend] 
-    ↓
-[Test & Deploy]
+### ✅ 5. Test and Deploy
+- [ ] Test form with valid/invalid inputs
+- [ ] Deploy frontend and backend on Vercel, Netlify, or Render
