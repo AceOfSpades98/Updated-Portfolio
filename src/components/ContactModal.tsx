@@ -48,7 +48,7 @@ export default function ContactModal({ open, onClose }: ContactModalProps) {
         <h2 id="contact-title">Contact Me</h2>
 
         <form id="contactForm" 
-          action="http://formsubmit.com/noah.whiffen@keyin.com"
+          action="http://formsubmit.co/noah.whiffen@keyin.com"
           method="POST"
           onSubmit={handleSubmit}
           >
