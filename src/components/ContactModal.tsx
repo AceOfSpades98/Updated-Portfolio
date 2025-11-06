@@ -47,7 +47,11 @@ export default function ContactModal({ open, onClose }: ContactModalProps) {
 
         <h2 id="contact-title">Contact Me</h2>
 
-        <form id="contactForm" onSubmit={handleSubmit}>
+        <form id="contactForm" 
+          action="http://formsubmit.com/noah.whiffen@keyin.com"
+          method="POST"
+          onSubmit={handleSubmit}
+          >
           <label htmlFor="name">Name:</label>
           <input id="name" name="name" required />
 
@@ -56,6 +60,8 @@ export default function ContactModal({ open, onClose }: ContactModalProps) {
 
           <label htmlFor="message">Message:</label>
           <textarea id="message" name="message" rows={4} required />
+
+          <input type="hidden" name="_next" value="https://aceofspades98.github.io/Updated-Portfolio/thanks" />
 
           <button type="submit">Send Message</button>
         </form>
