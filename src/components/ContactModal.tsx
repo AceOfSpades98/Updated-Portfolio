@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 
 type ContactModalProps = {
   open: boolean;
@@ -7,6 +7,7 @@ type ContactModalProps = {
 
 export default function ContactModal({ open, onClose }: ContactModalProps) {
   const dialogRef = useRef<HTMLDivElement | null>(null);
+  const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
     if (!open) return;
@@ -19,9 +20,12 @@ export default function ContactModal({ open, onClose }: ContactModalProps) {
 
   if (!open) return null;
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    onClose();
+  const handleSubmit = () => {
+    setSubmitted(true);
+    setTimeout(() => {
+      onClose();
+      setSubmitted(false);
+    }, 3500);
   };
 
   const stopProp = (e: React.MouseEvent) => e.stopPropagation();
@@ -45,33 +49,35 @@ export default function ContactModal({ open, onClose }: ContactModalProps) {
           ×
         </button>
 
-        <h2 id="contact-title">Contact Me</h2>
-
-        <form id="contactForm" 
-          action="http://formsubmit.co/noah.whiffen@keyin.com"
-          method="POST"
-          onSubmit={handleSubmit}
+        {submitted ? (
+          <div className="success-message">
+            <p>Thank you for reaching out. I will be with you shortly!</p>
+          </div>
+        ) : (
+          <form
+            id="contactForm"
+            action="https://formsubmit.co/noah.whiffen@keyin.com"
+            method="POST"
+            onSubmit={handleSubmit}
           >
-          <label htmlFor="name">Name:</label>
-          <input id="name" name="name" required />
+            <h2 id="contact-title">Contact Me</h2>
 
-          <label htmlFor="email">Email:</label>
-          <input id="email" name="email" type="email" required />
+            <label htmlFor="name">Name:</label>
+            <input id="name" name="name" required />
 
-          <label htmlFor="message">Message:</label>
-          <textarea id="message" name="message" rows={4} required />
+            <label htmlFor="email">Email:</label>
+            <input id="email" name="email" type="email" required />
 
-          <input type="hidden" name="_next" value="https://aceofspades98.github.io/Updated-Portfolio/thanks" />
+            <label htmlFor="message">Message:</label>
+            <textarea id="message" name="message" rows={4} required />
 
-          <button type="submit">Send Message</button>
-        </form>
+            <input type="text" name="_honey" style={{ display: "none" }} />
+
+            <button type="submit">Send Message</button>
+          </form>
+        )}
       </div>
     </div>
   );
 }
-
-// TODO:
-
-// Email service
-// Validate emails to prevent spam
 // Wire backend for future proofing

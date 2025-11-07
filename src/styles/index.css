@@ -111,6 +111,11 @@
     max-width: 500px;
 }
 
+.success-message {
+    color: black;
+    font-size: 1.5rem;
+}
+
 label {
     color: black;
 }
