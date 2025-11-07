@@ -1,4 +1,6 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
+
+const [submitted, setSubmitted] = useState(false);
 
 type ContactModalProps = {
   open: boolean;
@@ -47,31 +49,39 @@ export default function ContactModal({ open, onClose }: ContactModalProps) {
 
         <h2 id="contact-title">Contact Me</h2>
 
-        <form id="contactForm" 
-          action="http://formsubmit.co/noah.whiffen@keyin.com"
-          method="POST"
-          onSubmit={handleSubmit}
+        {submitted ? (
+          <div className="success-message">
+            <p>Thank you for reaching out. I will be with you shortly!</p>
+          </div>
+        ) : (
+          <form
+            id="contactForm"
+            action="https://formsubmit.co/noah.whiffen@keyin.com"
+            method="POST"
+            onSubmit={() => {
+              setSubmitted(true);
+              setTimeout(() => {
+                onClose();
+                setSubmitted(false);
+              }, 2500);
+            }}
           >
-          <label htmlFor="name">Name:</label>
-          <input id="name" name="name" required />
+            <label htmlFor="name">Name:</label>
+            <input id="name" name="name" required />
 
-          <label htmlFor="email">Email:</label>
-          <input id="email" name="email" type="email" required />
+            <label htmlFor="email">Email:</label>
+            <input id="email" name="email" type="email" required />
 
-          <label htmlFor="message">Message:</label>
-          <textarea id="message" name="message" rows={4} required />
+            <label htmlFor="message">Message:</label>
+            <textarea id="message" name="message" rows={4} required />
 
-          <input type="hidden" name="_next" value="https://aceofspades98.github.io/Updated-Portfolio/thanks" />
+            <input type="text" name="_honey" style={{ display: "none" }} />
 
-          <button type="submit">Send Message</button>
-        </form>
+            <button type="submit">Send Message</button>
+          </form>
+        )}
       </div>
     </div>
   );
 }
-
-// TODO:
-
-// Email service
-// Validate emails to prevent spam
 // Wire backend for future proofing
