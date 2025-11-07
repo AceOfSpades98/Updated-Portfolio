@@ -1,7 +1,5 @@
 import { useEffect, useState, useRef } from "react";
 
-const [submitted, setSubmitted] = useState(false);
-
 type ContactModalProps = {
   open: boolean;
   onClose: () => void;
@@ -9,6 +7,7 @@ type ContactModalProps = {
 
 export default function ContactModal({ open, onClose }: ContactModalProps) {
   const dialogRef = useRef<HTMLDivElement | null>(null);
+  const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
     if (!open) return;
@@ -21,9 +20,12 @@ export default function ContactModal({ open, onClose }: ContactModalProps) {
 
   if (!open) return null;
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    onClose();
+  const handleSubmit = () => {
+    setSubmitted(true);
+    setTimeout(() => {
+      onClose();
+      setSubmitted(false);
+    }, 3500);
   };
 
   const stopProp = (e: React.MouseEvent) => e.stopPropagation();
@@ -47,8 +49,6 @@ export default function ContactModal({ open, onClose }: ContactModalProps) {
           ×
         </button>
 
-        <h2 id="contact-title">Contact Me</h2>
-
         {submitted ? (
           <div className="success-message">
             <p>Thank you for reaching out. I will be with you shortly!</p>
@@ -58,14 +58,10 @@ export default function ContactModal({ open, onClose }: ContactModalProps) {
             id="contactForm"
             action="https://formsubmit.co/noah.whiffen@keyin.com"
             method="POST"
-            onSubmit={() => {
-              setSubmitted(true);
-              setTimeout(() => {
-                onClose();
-                setSubmitted(false);
-              }, 2500);
-            }}
+            onSubmit={handleSubmit}
           >
+            <h2 id="contact-title">Contact Me</h2>
+
             <label htmlFor="name">Name:</label>
             <input id="name" name="name" required />
 
