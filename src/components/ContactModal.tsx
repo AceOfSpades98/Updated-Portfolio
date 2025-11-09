@@ -20,12 +20,27 @@ export default function ContactModal({ open, onClose }: ContactModalProps) {
 
   if (!open) return null;
 
-  const handleSubmit = () => {
-    setSubmitted(true);
-    setTimeout(() => {
-      onClose();
-      setSubmitted(false);
-    }, 3500);
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      await fetch("https://formsubmit.co/noah.whiffen@keyin.com", {
+        method: "POST",
+        body: formData,
+      });
+
+      setSubmitted(true);
+
+      setTimeout(() => {
+        onClose();
+        setSubmitted(false);
+      }, 3500);
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
   };
 
   const stopProp = (e: React.MouseEvent) => e.stopPropagation();
@@ -54,12 +69,7 @@ export default function ContactModal({ open, onClose }: ContactModalProps) {
             <p>Thank you for reaching out. I will be with you shortly!</p>
           </div>
         ) : (
-          <form
-            id="contactForm"
-            action="https://formsubmit.co/noah.whiffen@keyin.com"
-            method="POST"
-            onSubmit={handleSubmit}
-          >
+          <form id="contactForm" onSubmit={handleSubmit}>
             <h2 id="contact-title">Contact Me</h2>
 
             <label htmlFor="name">Name:</label>
@@ -71,7 +81,13 @@ export default function ContactModal({ open, onClose }: ContactModalProps) {
             <label htmlFor="message">Message:</label>
             <textarea id="message" name="message" rows={4} required />
 
-            <input type="text" name="_honey" style={{ display: "none" }} />
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Contact Form Submission"
+            />
+            <input type="hidden" name="_honey" style={{ display: "none" }} />
 
             <button type="submit">Send Message</button>
           </form>
@@ -80,4 +96,3 @@ export default function ContactModal({ open, onClose }: ContactModalProps) {
     </div>
   );
 }
-// Wire backend for future proofing
