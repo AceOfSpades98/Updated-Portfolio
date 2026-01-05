@@ -18,7 +18,7 @@ export default function ContactCard({
   photoSrc = "images/me.jpg",
   links = {
     linkedin: "https://www.linkedin.com/in/noah-w-307642329/",
-    github: "https://github.com/NoahWhiffen?tab=repositories",
+    github: "https://github.com/AceOfSpades98?tab=repositories",
     instagram: "#",
   },
 }: ContactCardProps) {
