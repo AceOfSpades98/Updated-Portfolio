@@ -2,7 +2,7 @@ import Projects from "./Projects";
 import ContactCard from "./ContactCard";
 import ContactModal from "./ContactModal";
 
-import AboutSection from "./sections/AboutSection";
+import EducationSection from "./sections/EducationSection";
 import IntroSection from "./sections/IntroSection";
 import SkillsSection from "./sections/SkillsSection";
 
@@ -38,7 +38,8 @@ export default function HomeSections({
       <Projects />
 
       <div className="wrapper">
-        <AboutSection title={aboutTitle} text={aboutText} />
+        
+        <EducationSection title={aboutTitle} text={aboutText} />
       </div>
 
       <ContactModal

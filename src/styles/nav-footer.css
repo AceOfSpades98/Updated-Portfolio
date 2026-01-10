@@ -28,6 +28,11 @@ nav {
     color: black;
     margin: 25px;
     transition: transform 0.3s ease;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font: inherit;
 }
 
 .nav-links:hover {

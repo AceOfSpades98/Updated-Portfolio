@@ -6,11 +6,11 @@ import "../styles/styles.css";
 
 export default function Projects() {
   return (
-    <section className="appWrapper">
+    <section className="appWrapper" id="projects">
       <div className="projects-blurb">
         <h2 className="project-header">My Projects</h2>
         <p>
-          Here are a handful of my projects, ranging from school assignments to personal projects. These are my favourites and
+          Ranging from school assignments to personal projects. These are my favourites and
           demonstrate both my front-end and back-end capabilities, as well as my ability to integrate both. 
         </p>
       </div>
