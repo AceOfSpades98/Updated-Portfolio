@@ -1,4 +1,6 @@
-import { SKILLS_BY_CATEGORY } from "../data/skills";
+import AboutSection from "./sections/AboutSection";
+import IntroSection from "./sections/IntroSection";
+import SkillsSection from "./sections/SkillsSection";
 
 type Props = {
   introTitle?: string;
@@ -8,47 +10,16 @@ type Props = {
 };
 
 export default function HomeSections({
-  introTitle = "Hi, I'm Noah",
-  introText = "I am a full-stack developer with a strength in back-end/database integration. I take pride in making my apps intuitive and user-friendly!",
-  aboutTitle = "A Little About Me",
-  aboutText = "Outside of coding, you'll often find me cooking, weightlifting, hiking, reading, or gaming — anything that keeps me learning and active. I'm always open to new opportunities, collaborations, or just connecting with fellow developers. Feel free to reach out!",
+  introTitle,
+  introText,
+  aboutTitle,
+  aboutText,
 }: Props) {
   return (
     <>
-      {/* Intro */}
-      <section className="contentContainer">
-        <h2>{introTitle}</h2>
-        <p>{introText}</p>
-      </section>
-
-      {/* Skills */}
-      <section className="contentContainer">
-            {/* <h3>Languages, Tools and Frameworks:</h3> */}
-
-            {Object.entries(SKILLS_BY_CATEGORY).map(([category, skills]) => (
-              <div key={category} className="skill-group">
-                <h4>{category}</h4>
-                <div className="skillsGrid">
-                  {skills.map((s) => (
-                    <div key={s.name} className="icon-container" title={s.name}>
-                        <img
-                          src={s.icon}
-                          alt={s.alt ?? `${s.name} Icon`}
-                          className="icon-images"
-                        />
-                        <span className="tooltip-text">{s.name}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-        </section>
-
-      {/* About */}
-      <section className="contentContainer">
-        <h3>{aboutTitle}</h3>
-        <p>{aboutText}</p>
-      </section>
+      <IntroSection title={introTitle} text={introText} />
+      <SkillsSection />
+      <AboutSection title={aboutTitle} text={aboutText} />
     </>
   );
 }
