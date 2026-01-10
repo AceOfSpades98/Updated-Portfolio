@@ -23,8 +23,6 @@ html {
     scroll-behavior: smooth; 
 }
 
-
-
 body {
   background: radial-gradient(1200px 800px at 20% -10%, #1d2a44, transparent 60%) ,
               linear-gradient(180deg, #0b1220, #0b1220);
@@ -38,7 +36,6 @@ h2 {
     font-weight: 675;
     color: var(--accent);
     grid-column: 1 / -1;
-    margin: auto;
     letter-spacing: .01em;
     font-family: "Space Mono", monospace;
 }
@@ -48,7 +45,6 @@ h3 {
     font-weight: 575;
     color: var(--accent);
     grid-column: 1 / -1;
-    margin: 15px;
     font-family: 'Lora', sans-serif;
 }
 
@@ -63,9 +59,10 @@ h4 {
 /* ----------- Media Queries ----------- */
 
 /* Tablets (768px and below) */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     h2 {
         font-size: 42px;
+        margin-left: 0;
     }
 
     h3 {

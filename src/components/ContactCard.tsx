@@ -23,7 +23,8 @@ export default function ContactCard({
   },
 }: ContactCardProps) {
   return (
-    <aside className="contactCard">
+    
+    <div className="contactCard">
       <img className="myPhoto" src={photoSrc} alt={`Photo of ${name}`} />
 
       <p><strong>Noah Whiffen</strong></p>
@@ -66,6 +67,6 @@ export default function ContactCard({
           </a>
         )}
       </div>
-    </aside>
+    </div>
   );
 }

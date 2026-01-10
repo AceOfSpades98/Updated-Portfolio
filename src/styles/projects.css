@@ -1,10 +1,16 @@
 .appWrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 24px;
-  width: min(1500px, 92%); 
-  margin: 24px auto 60px;
+
+  width: 80%;
+  max-width: none;
+  margin: auto;
+  padding: 0 24px;
+  box-sizing: border-box;
 }
+
+
 
 .projects-blurb {
   grid-column: 1 / -1;
