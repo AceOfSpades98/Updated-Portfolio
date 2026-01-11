@@ -24,6 +24,7 @@ export const education = [
     date: "2024",
     description:
       "Introductory course exploring generative AI concepts, use cases, and foundational cloud-based AI services.",
+    image: `${base}images/Education/keyin-logo.jpg`,
   },
   {
     title: "AWS Cloud Foundations",
