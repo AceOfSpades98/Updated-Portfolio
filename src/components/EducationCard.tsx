@@ -7,9 +7,10 @@ export default function EducationCard({
   description,
   image,
   href,
+  skills,
 }: Education) {
   return (
-    <div className="appContainer">
+    <div className="education-container">
       <h3>{title}</h3>
 
       <p className="education-text">
@@ -27,7 +28,16 @@ export default function EducationCard({
       )}
 
       <p>{description}</p>
+
+      <div className="project-tools">
+        <ul>
+          {skills.map((skill) => (
+            <li key={skill}>{skill}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
+
 

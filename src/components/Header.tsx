@@ -4,18 +4,25 @@ export default function Header() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const scrollToProjects = () => {
-    const el = document.getElementById("projects");
+  const scrollToSection = (id: string) => {
+    const el = document.getElementById(id);
     el?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   const handleProjectsClick = () => {
-    // If you're not on Home, go Home first, then scroll
     if (location.pathname !== "/") {
       navigate("/", { state: { scrollTo: "projects" } });
       return;
     }
-    scrollToProjects();
+    scrollToSection("projects");
+  };
+
+  const handleEducationClick = () => {
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: "education" } });
+      return;
+    }
+    scrollToSection("education");
   };
 
   return (
@@ -25,22 +32,30 @@ export default function Header() {
       <nav>
         <Link to="/" className="nav-links">Home</Link>
 
-        <button type="button" className="nav-links" onClick={handleProjectsClick}>
+        <button
+          type="button"
+          className="nav-links"
+          onClick={handleProjectsClick}
+        >
           Projects
         </button>
 
-        {/* Link to education */}
-        {/* Link to certifications */}
-        
-        <a 
+        <button
+          type="button"
+          className="nav-links"
+          onClick={handleEducationClick}
+        >
+          Education
+        </button>
+
+        <a
           href={`${import.meta.env.BASE_URL}Tech_Resume.pdf`}
           target="_blank"
           rel="noopener noreferrer"
-          className="nav-links">
+          className="nav-links"
+        >
           Resume
         </a>
-        
-        {/* <Link to="/services" className="nav-links">Services</Link> */}
       </nav>
     </header>
   );

@@ -63,21 +63,6 @@
   margin: auto;
 }
 
-.credentialImages {
-  width: 60%;
-  max-height: 450px;
-  height: auto;
-  object-fit: cover;
-  border-radius: calc(var(--radius) - 4px);
-  border: 1px solid var(--border);
-  margin: auto;
-}
-
-.education-text {
-  text-align: center;
-}
-
-
 .project-tools ul {
   display: flex;
   flex-wrap: wrap;
