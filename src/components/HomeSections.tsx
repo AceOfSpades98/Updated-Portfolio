@@ -32,11 +32,7 @@ export default function HomeSections({
         <SkillsSection />
       </div>
       <Projects />
-
-      <div className="wrapper">
-        
-        <EducationSection />
-      </div>
+      <EducationSection />
 
       <ContactModal
         open={isModalOpen}

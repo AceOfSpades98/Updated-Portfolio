@@ -12,7 +12,7 @@ export default function EducationCard({
     <div className="appContainer">
       <h3>{title}</h3>
 
-      <p>
+      <p className="education-text">
         <strong>{subtitle}</strong>
         <br />
         {date}
@@ -21,20 +21,12 @@ export default function EducationCard({
       {image && (
         <img
           src={image}
-          className="projectImages"
+          className="credentialImages"
           alt={`${subtitle} logo`}
         />
       )}
 
       <p>{description}</p>
-
-      {href ? (
-        <a className="projectLinks" href={href} target="_blank" rel="noopener noreferrer">
-          View Credential
-        </a>
-      ) : (
-        <span className="projectLinks disabled">View Credential</span>
-      )}
     </div>
   );
 }
