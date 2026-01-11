@@ -12,7 +12,8 @@
 
 .introSection {
   display: grid;
-  grid-template-columns: 850px 1fr;
+  grid-template-columns: 825px 1fr;
+  width: 90vw;
   gap: 25px;
   align-items: center;
   text-align: left;
@@ -27,7 +28,8 @@
 
 .contactCard {
   width: min(425px, 90%);
-  height: 650px;
+  height: auto;
+  max-height: 650px;
 
   margin: 40px auto;
   padding: 10px;
@@ -134,7 +136,7 @@
   align-items: center;
   text-align: center;
   width: 100%;
-  height: 140px;
+  height: auto;
   padding: 12px;
   border: 1px solid black;
   border-radius: var(--radius);
@@ -230,7 +232,7 @@
     }
 }
 
-//* Tablets landscape (769px–1400px) */
+/* Tablets landscape (769px–1400px) */
 @media (min-width: 769px) and (max-width: 1400px) and (orientation: landscape) {
 
   .wrapper {
@@ -295,7 +297,8 @@
   }
 
   .icon-container {
-    width: 100%;
+    width: 90%;
+    max-width: 300px;
     padding: 15px;
     margin: 0;
     border-radius: 15px;
@@ -339,7 +342,7 @@
 
 
 /* Portrait tablets (<= 1024px portrait) */
-@media (max-width: 1024px) and (orientation: portrait) {
+@media (max-width: 1400px) and (orientation: portrait) {
 
   .wrapper {
     width: 100%;
@@ -381,10 +384,11 @@
   }
 
   .contentContainer {
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 10px;
+    max-width: 800px;
+    margin: auto;
+    gap: 20px;
     margin-top: 20px;
   }
 

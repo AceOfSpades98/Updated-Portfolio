@@ -26,11 +26,9 @@ export default function HomeSections({
 
   return (
     <>
-      <div className="wrapper">
-        <div>
-          <ContactCard onContactClick={() => setIsModalOpen(true)} />
-          <IntroSection title={introTitle} text={introText} />
-        </div>
+      <div className="introSection">
+        <ContactCard onContactClick={() => setIsModalOpen(true)} />
+        <IntroSection title={introTitle} text={introText} />
       </div>
       <div className="wrapper">
         <SkillsSection />
