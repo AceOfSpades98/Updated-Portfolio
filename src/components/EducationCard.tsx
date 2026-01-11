@@ -19,13 +19,22 @@ export default function EducationCard({
         {date}
       </p>
 
-      {image && (
-        <img
-          src={image}
-          className="credentialImages"
-          alt={`${subtitle} logo`}
-        />
-      )}
+      {image &&
+        (href ? (
+          <a href={href} target="_blank" rel="noopener noreferrer">
+            <img
+              src={image}
+              className="credentialImages"
+              alt={`${subtitle} badge`}
+            />
+          </a>
+        ) : (
+          <img
+            src={image}
+            className="credentialImages"
+            alt={`${subtitle} logo`}
+          />
+        ))}
 
       <p>{description}</p>
 
@@ -39,5 +48,3 @@ export default function EducationCard({
     </div>
   );
 }
-
-

@@ -12,7 +12,7 @@
 }
 
 .credentialImages {
-  width: 40%;
+  width: 45%;
   max-height: 450px;
   height: auto;
   object-fit: cover;
@@ -40,6 +40,11 @@
   box-shadow: var(--shadow-1);
   height: auto;
   gap: 15px;
+}
+
+.education-container a {
+    display: flex;
+    justify-content: center;
 }
 
 .education-container h3 {
