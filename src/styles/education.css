@@ -1,0 +1,148 @@
+.education-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 20px;
+
+  width: 90%;
+  max-width: none;
+  margin: auto;
+  margin-bottom: 35px;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.credentialImages {
+  width: 45%;
+  max-height: 450px;
+  height: auto;
+  object-fit: cover;
+  border-radius: calc(var(--radius) - 4px);
+  border: 1px solid var(--border);
+  margin: auto;
+}
+
+.education-text {
+  text-align: center;
+}
+
+.education-header {
+    text-align: left;
+}
+
+.education-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  border-radius: var(--radius);
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-1);
+  height: auto;
+  gap: 15px;
+}
+
+.education-container a {
+    display: flex;
+    justify-content: center;
+}
+
+.education-container h3 {
+  font-size: clamp(22px, 2.4vw, 28px);
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.education-container p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.project-tools ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.project-tools li {
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+/* Tablet Portrait mode*/
+@media (min-width: 601px) and (max-width: 900px) {
+  .education-wrapper {
+    grid-template-columns: 1fr;
+    width: 80%;
+    padding: 0 20px;
+    justify-items: center;
+  }
+
+  .education-container {
+    padding: 20px;
+  }
+
+  .credentialImages {
+    width: 55%;
+  }
+
+  .education-container h3,
+  .education-text {
+    text-align: center;
+  }
+
+  .project-tools ul {
+    justify-content: center;
+  }
+}
+
+/* Tablet Landscape mode */
+@media (min-width: 901px) and (max-width: 1200px) {
+  .education-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    padding: 0 24px;
+  }
+
+  .credentialImages {
+    width: 45%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .education-wrapper {
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 0 12px;
+    justify-items: center;
+  }
+
+  .education-container {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .credentialImages {
+    width: 70%;
+    max-height: 300px;
+  }
+
+  .education-container h3,
+  .education-text {
+    text-align: center;
+  }
+
+  .project-tools ul {
+    justify-content: center;
+  }
+}
+

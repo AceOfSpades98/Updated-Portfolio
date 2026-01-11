@@ -46,6 +46,7 @@ h3 {
     color: var(--accent);
     grid-column: 1 / -1;
     font-family: 'Lora', sans-serif;
+    text-align: center;
 }
 
 h4 {

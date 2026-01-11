@@ -18,8 +18,6 @@ type Props = {
 export default function HomeSections({
   introTitle,
   introText,
-  aboutTitle,
-  aboutText,
 }: Props) {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -34,11 +32,7 @@ export default function HomeSections({
         <SkillsSection />
       </div>
       <Projects />
-
-      <div className="wrapper">
-        
-        <EducationSection title={aboutTitle} text={aboutText} />
-      </div>
+      <EducationSection />
 
       <ContactModal
         open={isModalOpen}

@@ -6,11 +6,10 @@
   width: 80%;
   max-width: none;
   margin: auto;
+  margin-bottom: 35px;
   padding: 0 24px;
   box-sizing: border-box;
 }
-
-
 
 .projects-blurb {
   grid-column: 1 / -1;

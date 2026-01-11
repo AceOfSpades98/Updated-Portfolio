@@ -1,16 +1,16 @@
-type Props = {
-  title?: string;
-  text?: string;
-};
+import EducationCard from "../EducationCard";
+import { education } from "../../data/education";
 
-export default function EducationSection({
-  title = "Education & Credentials",
-  text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-}: Props) {
+import "../../styles/education.css";
+import "../../styles/styles.css";
+
+export default function EducationSection() {
   return (
-    <section className="contentContainer">
-      <h3>{title}</h3>
-      <p>{text}</p>
+    <section className="education-wrapper" id="education">
+      <h2 className="education-header">Education & Credentials</h2>
+      {education.map((e) => (
+        <EducationCard key={`${e.title}-${e.date}`} {...e} />
+      ))}
     </section>
   );
 }
