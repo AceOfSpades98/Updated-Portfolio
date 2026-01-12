@@ -85,24 +85,6 @@ export const projects: Project[] = [
     href: "https://github.com/Noah-Lambe/Gym_Management_System",
   },
   {
-    title: "Bitcoin Price Tracker",
-    img: "images/Projects/bitcoinTracker.png",
-    alt: "Bitcoin Price Tracker",
-    desc:
-      "A React app that pulls the current price of Bitcoin from an API and displays it in 4 separate currencies.",
-    tools: ["JavaScript", "React", "CSS"],
-    href: "https://github.com/AceOfSpades98/bitcoin-price-app",
-  },
-  {
-    title: "Password Strength Checker",
-    img: "images/Projects/PasswordChecker.png",
-    alt: "Password Strength Checker",
-    desc:
-      "A simple GUI to validate the strength of your password by checking a list of common passwords and other criteria. One of my first ever projects.",
-    tools: ["Python", "Tkinter"],
-    href: "https://github.com/AceOfSpades98/passwordStrengthChecker",
-  },
-  {
     title: "One Stop Insurance Company",
     img: "images/Projects/OneStopInsurance.png",
     alt: "Insurance Company App",
@@ -168,4 +150,22 @@ export const projects: Project[] = [
   //   tools: ["Javascript", "Express.js", "CSS"],
   //   href:
   //     "https://github.com/Keyin-SD14-S3/fullstack-qap-2-NoahWhiffen",
+  // },
+   // {
+  //   title: "Bitcoin Price Tracker",
+  //   img: "images/Projects/bitcoinTracker.png",
+  //   alt: "Bitcoin Price Tracker",
+  //   desc:
+  //     "A React app that pulls the current price of Bitcoin from an API and displays it in 4 separate currencies.",
+  //   tools: ["JavaScript", "React", "CSS"],
+  //   href: "https://github.com/AceOfSpades98/bitcoin-price-app",
+  // },
+  // {
+  //   title: "Password Strength Checker",
+  //   img: "images/Projects/PasswordChecker.png",
+  //   alt: "Password Strength Checker",
+  //   desc:
+  //     "A simple GUI to validate the strength of your password by checking a list of common passwords and other criteria. One of my first ever projects.",
+  //   tools: ["Python", "Tkinter"],
+  //   href: "https://github.com/AceOfSpades98/passwordStrengthChecker",
   // },
