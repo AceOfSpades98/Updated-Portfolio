@@ -76,30 +76,12 @@ export const projects: Project[] = [
     href: "https://github.com/NoahWhiffen/dog-breed-gallery",
   },
   {
-    title: "Gym Management App",
-    img: "images/Projects/GymManagement.png",
-    alt: "Gym Management System",
-    desc:
-      "A CLI app to manage a gym’s customers and employees and store necessary data in a database.",
-    tools: ["Java", "PostgreSQL"],
-    href: "https://github.com/Noah-Lambe/Gym_Management_System",
-  },
-  {
     title: "One Stop Insurance Company",
     img: "images/Projects/OneStopInsurance.png",
     alt: "Insurance Company App",
     desc: "An application that generates invoices for an insurance company.",
     tools: ["Python"],
     href: "https://github.com/AceOfSpades98/qap4-Term1"
-  },
-  {
-    title: "Genealogy Website",
-    img: "images/Projects/whiffenGene.png",
-    alt: "Genealogy Website",
-    desc:
-      "A simple webpage intended to be used for my genealogy research.",
-    tools: ["HTML", "CSS"],
-    href: "https://github.com/NoahWhiffen/familyTreeSite",
   },
 ];
 
@@ -168,4 +150,22 @@ export const projects: Project[] = [
   //     "A simple GUI to validate the strength of your password by checking a list of common passwords and other criteria. One of my first ever projects.",
   //   tools: ["Python", "Tkinter"],
   //   href: "https://github.com/AceOfSpades98/passwordStrengthChecker",
+  // },
+  // {
+  //   title: "Genealogy Website",
+  //   img: "images/Projects/whiffenGene.png",
+  //   alt: "Genealogy Website",
+  //   desc:
+  //     "A simple webpage intended to be used for my genealogy research.",
+  //   tools: ["HTML", "CSS"],
+  //   href: "https://github.com/NoahWhiffen/familyTreeSite",
+  // },
+  //   {
+  //   title: "Gym Management App",
+  //   img: "images/Projects/GymManagement.png",
+  //   alt: "Gym Management System",
+  //   desc:
+  //     "A CLI app to manage a gym’s customers and employees and store necessary data in a database.",
+  //   tools: ["Java", "PostgreSQL"],
+  //   href: "https://github.com/Noah-Lambe/Gym_Management_System",
   // },
