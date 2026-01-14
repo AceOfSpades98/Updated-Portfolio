@@ -52,7 +52,7 @@ export const education = [
   {
     title: "AWS Cloud Architecting",
     subtitle: "AWS Academy",
-    date: "2024",
+    date: "2025",
     description:
       "Covered AWS architectural best practices, scalability, reliability, and cost-optimized cloud design through hands-on labs.",
     image: `${base}images/Education/cloud-architecting.png`,
