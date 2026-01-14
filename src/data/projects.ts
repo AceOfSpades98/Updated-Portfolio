@@ -26,7 +26,7 @@ export const projects: Project[] = [
       "The front end for the airport API, complete with user authentication and the ability to search flights and filter based on different criteria.",
     tools: ["Javascript", "React", "CSS"],
     href:
-      "https://github.com/Noah-Lambe/Sprint1_AirportAPI",
+      "https://github.com/Noah-Lambe/Airport_Front_End/tree/main",
   },
   {
     title: "BST API",
@@ -40,7 +40,7 @@ export const projects: Project[] = [
     {
     title: "BST Front End",
     img: "images/Projects/bstfrontend.jpg",
-    alt: "BST frontend",
+    alt: "BST Frontend",
     desc:
       "A React app for the BST API that displays user input as JSON data. Also allows you to view all past trees as JSON data.",
     tools: ["Javascript", "React", "CSS"],
@@ -76,34 +76,6 @@ export const projects: Project[] = [
     href: "https://github.com/NoahWhiffen/dog-breed-gallery",
   },
   {
-    title: "Gym Management App",
-    img: "images/Projects/GymManagement.png",
-    alt: "Gym Management System",
-    desc:
-      "A CLI app to manage a gym’s customers and employees and store necessary data in a database.",
-    tools: ["Java", "PostgreSQL"],
-    href: "https://github.com/Noah-Lambe/Gym_Management_System",
-  },
-  {
-    title: "Math Competition App",
-    img: "images/Projects/mathCompetition.png",
-    alt: "Math Competition App",
-    desc:
-      "An Express app that generates random math questions and tracks high scores.",
-    tools: ["Javascript", "Express.js", "CSS"],
-    href:
-      "https://github.com/Keyin-SD14-S3/fullstack-qap-2-NoahWhiffen",
-  },
-    {
-    title: "Password Strength Checker",
-    img: "images/Projects/PasswordChecker.png",
-    alt: "Password Strength Checker",
-    desc:
-      "A simple GUI to validate the strength of your password by checking a list of common passwords and other criteria. One of my first ever projects.",
-    tools: ["Python", "Tkinter"],
-    href: "https://github.com/AceOfSpades98/passwordStrengthChecker",
-  },
-  {
     title: "One Stop Insurance Company",
     img: "images/Projects/OneStopInsurance.png",
     alt: "Insurance Company App",
@@ -111,29 +83,11 @@ export const projects: Project[] = [
     tools: ["Python"],
     href: "https://github.com/AceOfSpades98/qap4-Term1"
   },
-  {
-    title: "Genealogy Website",
-    img: "images/Projects/whiffenGene.png",
-    alt: "Genealogy Website",
-    desc:
-      "A simple webpage intended to be used for my genealogy research.",
-    tools: ["HTML", "CSS"],
-    href: "https://github.com/NoahWhiffen/familyTreeSite",
-  },
 ];
 
 
 // Keeping these just in case I decide I want to display them later
 
-  // {
-  //   title: "Bitcoin Price Tracker",
-  //   img: "images/Projects/bitcoinTracker.png",
-  //   alt: "Bitcoin Price Tracker",
-  //   desc:
-  //     "A React app that pulls the current price of Bitcoin from an API and displays it in 4 separate currencies.",
-  //   tools: ["JavaScript", "React", "CSS"],
-  //   href: "https://github.com/AceOfSpades98/bitcoin-price-app",
-  // },
   // {
   //   title: "CLI Menu Application",
   //   img: "images/Projects/PythonMenu.png",
@@ -169,20 +123,49 @@ export const projects: Project[] = [
   //   tools: ["Python", "Tkinter"],
   //   href: "https://github.com/AceOfSpades98/payCalculator",
   // },
-  // {
-  //   title: "To-Do List App",
-  //   img: "images/Projects/ToDoApp.png",
-  //   alt: "To-Do App",
+  //  {
+  //   title: "Math Competition App",
+  //   img: "images/Projects/mathCompetition.png",
+  //   alt: "Math Competition App",
   //   desc:
-  //     "A to-do list app that allows the user to keep track of tasks.",
+  //     "An Express app that generates random math questions and tracks high scores.",
+  //   tools: ["Javascript", "Express.js", "CSS"],
+  //   href:
+  //     "https://github.com/Keyin-SD14-S3/fullstack-qap-2-NoahWhiffen",
+  // },
+   // {
+  //   title: "Bitcoin Price Tracker",
+  //   img: "images/Projects/bitcoinTracker.png",
+  //   alt: "Bitcoin Price Tracker",
+  //   desc:
+  //     "A React app that pulls the current price of Bitcoin from an API and displays it in 4 separate currencies.",
   //   tools: ["JavaScript", "React", "CSS"],
-  //   href: "https://github.com/NoahWhiffen/to-do-app",
+  //   href: "https://github.com/AceOfSpades98/bitcoin-price-app",
   // },
   // {
-  //   title: "One Stop Insurance Company",
-  //   img: "images/Projects/OneStopInsurance.png",
-  //   alt: "Insurance Company App",
-  //   desc: "An application that generates invoices for an insurance company.",
-  //   tools: ["Python"],
-  //   href: "https://github.com/AceOfSpades98/qap4-Term1"
+  //   title: "Password Strength Checker",
+  //   img: "images/Projects/PasswordChecker.png",
+  //   alt: "Password Strength Checker",
+  //   desc:
+  //     "A simple GUI to validate the strength of your password by checking a list of common passwords and other criteria. One of my first ever projects.",
+  //   tools: ["Python", "Tkinter"],
+  //   href: "https://github.com/AceOfSpades98/passwordStrengthChecker",
+  // },
+  // {
+  //   title: "Genealogy Website",
+  //   img: "images/Projects/whiffenGene.png",
+  //   alt: "Genealogy Website",
+  //   desc:
+  //     "A simple webpage intended to be used for my genealogy research.",
+  //   tools: ["HTML", "CSS"],
+  //   href: "https://github.com/NoahWhiffen/familyTreeSite",
+  // },
+  //   {
+  //   title: "Gym Management App",
+  //   img: "images/Projects/GymManagement.png",
+  //   alt: "Gym Management System",
+  //   desc:
+  //     "A CLI app to manage a gym’s customers and employees and store necessary data in a database.",
+  //   tools: ["Java", "PostgreSQL"],
+  //   href: "https://github.com/Noah-Lambe/Gym_Management_System",
   // },
