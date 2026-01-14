@@ -14,7 +14,7 @@ export const education = [
   {
     title: "Diploma in Software Development",
     subtitle: "Keyin College",
-    date: "2024 – 2025",
+    date: "2024 - 2025",
     description:
       "Full-stack software development program covering front-end and back-end development, DevOps principles, data structures, algorithms, and UI/UX design.",
     image: `${base}images/Education/keyin-logo.jpg`,
